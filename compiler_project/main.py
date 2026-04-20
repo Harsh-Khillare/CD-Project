@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+"""Main entry point for AI Error Tutor"""
+
+import sys
+import os
+
+# Add src directory to path
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
+
+from src.cli import cli
+
+if __name__ == '__main__':
+    cli()
